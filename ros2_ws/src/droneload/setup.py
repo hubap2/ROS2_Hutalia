@@ -26,6 +26,7 @@ setup(
         'console_scripts': [
             'camera_node = droneload.camera_node:main',
             'reconnaissance_node = droneload.reconnaissance_node:main',
+            'aruco_node = droneload.aruco_node:main',
         ],
     },
 )
