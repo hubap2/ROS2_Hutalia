@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "marvelmind_ros2_msgs/msg/MarvelmindUserData",
+      "fields": [
+        {
+          "name": "timestamp_ms",
+          "type": {
+            "type_id": 8,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "data",
+          "type": {
+            "type_id": 147,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "marvelmind_ros2_msgs/msg/MarvelmindUserData",
+      "hash_string": "RIHS01_44f6436c6adbb7ac4cdcbb3056fd5169d149c3015f70c3e139eb95b6056c0766"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+/home/hutalia/ROS2_Hutalia/ros2_ws/build/marvelmind_ros2_msgs/rosidl_generator_rs/marvelmind_ros2_msgs/rust/src/msg/rmw.rs

@@ -1,0 +1,22 @@
+[5.094s] Invoking command in '/home/hutalia/ROS2_Hutalia/ros2_ws/build/droneload': AMENT_PREFIX_PATH=/home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2_msgs LD_LIBRARY_PATH=/home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hutalia/ROS2_Hutalia/ros2_ws/build/droneload/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hutalia/ROS2_Hutalia/ros2_ws/install/droneload/lib/python3.12/site-packages:/home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hutalia/ROS2_Hutalia/ros2_ws/build/droneload/build --no-deps symlink_data
+[6.672s] running develop
+[7.712s] running egg_info
+[7.713s] creating droneload.egg-info
+[7.812s] writing droneload.egg-info/PKG-INFO
+[7.814s] writing dependency_links to droneload.egg-info/dependency_links.txt
+[7.815s] writing requirements to droneload.egg-info/requires.txt
+[7.816s] writing top-level names to droneload.egg-info/top_level.txt
+[7.817s] writing manifest file 'droneload.egg-info/SOURCES.txt'
+[8.074s] reading manifest file 'droneload.egg-info/SOURCES.txt'
+[8.077s] writing manifest file 'droneload.egg-info/SOURCES.txt'
+[8.173s] running build_ext
+[8.173s] Creating /home/hutalia/ROS2_Hutalia/ros2_ws/install/droneload/lib/python3.12/site-packages/droneload.egg-link (link to .)
+[8.176s] 
+[8.176s] Installed /home/hutalia/ROS2_Hutalia/ros2_ws/build/droneload
+[8.177s] running symlink_data
+[8.178s] creating /home/hutalia/ROS2_Hutalia/ros2_ws/install/droneload/share/ament_index
+[8.180s] creating /home/hutalia/ROS2_Hutalia/ros2_ws/install/droneload/share/ament_index/resource_index
+[8.184s] creating /home/hutalia/ROS2_Hutalia/ros2_ws/install/droneload/share/ament_index/resource_index/packages
+[8.186s] symbolically linking /home/hutalia/ROS2_Hutalia/ros2_ws/build/droneload/resource/droneload -> /home/hutalia/ROS2_Hutalia/ros2_ws/install/droneload/share/ament_index/resource_index/packages
+[8.190s] symbolically linking /home/hutalia/ROS2_Hutalia/ros2_ws/build/droneload/package.xml -> /home/hutalia/ROS2_Hutalia/ros2_ws/install/droneload/share/droneload
+[8.351s] Invoked command in '/home/hutalia/ROS2_Hutalia/ros2_ws/build/droneload' returned '0': AMENT_PREFIX_PATH=/home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2_msgs LD_LIBRARY_PATH=/home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hutalia/ROS2_Hutalia/ros2_ws/build/droneload/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hutalia/ROS2_Hutalia/ros2_ws/install/droneload/lib/python3.12/site-packages:/home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hutalia/ROS2_Hutalia/ros2_ws/build/droneload/build --no-deps symlink_data

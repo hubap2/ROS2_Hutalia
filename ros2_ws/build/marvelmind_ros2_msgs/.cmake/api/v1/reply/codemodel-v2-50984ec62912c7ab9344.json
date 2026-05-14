@@ -1,0 +1,267 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-d3508a47ebf504a3bb74.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				},
+				{
+					"build" : "marvelmind_ros2_msgs__py",
+					"jsonFile" : "directory-marvelmind_ros2_msgs__py-01437e40f1ef31ca3384.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/hutalia/ROS2_Hutalia/ros2_ws/build/marvelmind_ros2_msgs/marvelmind_ros2_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "marvelmind_ros2_msgs__rs",
+					"jsonFile" : "directory-marvelmind_ros2_msgs__rs-8d49aa25660fff247087.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/hutalia/ROS2_Hutalia/ros2_ws/build/marvelmind_ros2_msgs/marvelmind_ros2_msgs__rs",
+					"targetIndexes" : 
+					[
+						14
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "marvelmind_ros2_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_marvelmind_ros2_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_marvelmind_ros2_msgs_egg-e21353e5316fbd036a87.json",
+					"name" : "ament_cmake_python_build_marvelmind_ros2_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_marvelmind_ros2_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_marvelmind_ros2_msgs-cc47cb4206834f2835b1.json",
+					"name" : "ament_cmake_python_symlink_marvelmind_ros2_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "marvelmind_ros2_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-marvelmind_ros2_msgs-b579da20db555bcbdae7.json",
+					"name" : "marvelmind_ros2_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "marvelmind_ros2_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-marvelmind_ros2_msgs__cpp-7eb81cfadc515a316e10.json",
+					"name" : "marvelmind_ros2_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "marvelmind_ros2_msgs__py::@85e9bb94d2e3c051e3ce",
+					"jsonFile" : "target-marvelmind_ros2_msgs__py-22d16b042a5a36451ac1.json",
+					"name" : "marvelmind_ros2_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "marvelmind_ros2_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-marvelmind_ros2_msgs__rosidl_generator_c-19efcf82961eeee5188f.json",
+					"name" : "marvelmind_ros2_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "marvelmind_ros2_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-marvelmind_ros2_msgs__rosidl_generator_py-e721429e5d693e5065fe.json",
+					"name" : "marvelmind_ros2_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "marvelmind_ros2_msgs__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-marvelmind_ros2_msgs__rosidl_generator_type_description-46f262954709ebf3100f.json",
+					"name" : "marvelmind_ros2_msgs__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "marvelmind_ros2_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-marvelmind_ros2_msgs__rosidl_typesupport_c-8a0d39903e998c28fdc3.json",
+					"name" : "marvelmind_ros2_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "marvelmind_ros2_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-marvelmind_ros2_msgs__rosidl_typesupport_cpp-799df4ba7eab6a50e454.json",
+					"name" : "marvelmind_ros2_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "marvelmind_ros2_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-marvelmind_ros2_msgs__rosidl_typesupport_fastrtps_c-7a20cb75d556db97f37b.json",
+					"name" : "marvelmind_ros2_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "marvelmind_ros2_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-marvelmind_ros2_msgs__rosidl_typesupport_fastrtps_cpp-779695dd76037cfde194.json",
+					"name" : "marvelmind_ros2_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "marvelmind_ros2_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-marvelmind_ros2_msgs__rosidl_typesupport_introspection_c-c6a5942564a4c51434fe.json",
+					"name" : "marvelmind_ros2_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "marvelmind_ros2_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-marvelmind_ros2_msgs__rosidl_typesupport_introspection_cpp-4ed580e3883b4103fcb6.json",
+					"name" : "marvelmind_ros2_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "marvelmind_ros2_msgs__rs::@901a6202b4cdd43d100b",
+					"jsonFile" : "target-marvelmind_ros2_msgs__rs-56407669caab227d5bd1.json",
+					"name" : "marvelmind_ros2_msgs__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "marvelmind_ros2_msgs_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-marvelmind_ros2_msgs_s__rosidl_typesupport_c-1898981a16e6ab072e05.json",
+					"name" : "marvelmind_ros2_msgs_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "marvelmind_ros2_msgs_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-marvelmind_ros2_msgs_s__rosidl_typesupport_fastrtps_c-5e972b217a177edaf542.json",
+					"name" : "marvelmind_ros2_msgs_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "marvelmind_ros2_msgs_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-marvelmind_ros2_msgs_s__rosidl_typesupport_introspection_c-ce655daa4a67833e61c9.json",
+					"name" : "marvelmind_ros2_msgs_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "marvelmind_ros2_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-marvelmind_ros2_msgs_uninstall-a774edc4bda007fc8375.json",
+					"name" : "marvelmind_ros2_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-d316c177bc1d744e3186.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/hutalia/ROS2_Hutalia/ros2_ws/build/marvelmind_ros2_msgs",
+		"source" : "/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_msgs_upstream"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

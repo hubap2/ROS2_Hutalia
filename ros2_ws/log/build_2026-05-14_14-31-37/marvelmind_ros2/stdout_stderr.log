@@ -1,0 +1,293 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)
+-- Found geometry_msgs: 5.3.7 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+-- Found marvelmind_ros2_msgs: 1.0.2 (/home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2_msgs/share/marvelmind_ros2_msgs/cmake)
+-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (7.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/hutalia/ROS2_Hutalia/ros2_ws/build/marvelmind_ros2
+[ 12%] [32mBuilding C object CMakeFiles/marvelmind_hedge_lib.dir/src/marvelmind_hedge.c.o[0m
+[ 25%] [32mBuilding C object CMakeFiles/marvelmind_api_lib.dir/src/marvelmind_api.c.o[0m
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:23:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+   23 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_api_version)(void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:37:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+   37 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_get_last_error)(void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:51:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+   51 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_open_port)(void);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:62:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+   62 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_open_port_by_name)(void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:81:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+   81 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_open_port_udp)(void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:114:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  114 | [01;35m[Ktypedef[m[K void MM_STDCALL1 (MM_STDCALL2 *pt_mm_close_port)(void);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:125:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  125 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_get_version_and_id)(uint8_t address, void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:147:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  147 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_get_devices_list)(void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:189:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_wake_device)(uint8_t address);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:202:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  202 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_sleep_device)(uint8_t address);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:215:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  215 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_get_beacon_tele) (uint8_t address, void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:239:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  239 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_get_last_locations) (void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:289:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  289 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_get_last_locations2) (void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:393:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  393 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_get_last_distances) (void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:430:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  430 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_get_update_rate_setting) (void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:448:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  448 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_set_update_rate_setting) (void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:466:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  466 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_add_submap) (uint8_t submapId);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:477:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  477 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_delete_submap) (uint8_t submapId);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:490:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  490 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_freeze_submap) (uint8_t submapId);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:501:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  501 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_unfreeze_submap) (uint8_t submapId);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:514:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  514 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_get_submap_settings) (uint8_t submapId, void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:579:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  579 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_set_submap_settings) (uint8_t submapId, void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:646:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  646 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_get_ultrasound_settings) (uint8_t address, void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:676:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  676 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_set_ultrasound_settings) (uint8_t address, void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:707:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  707 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_erase_map) ();
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:716:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  716 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_set_default_settings) (uint8_t address);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:727:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  727 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_freeze_map) ();
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:736:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  736 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_unfreeze_map) ();
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:747:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  747 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_beacons_to_axes) (void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:764:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  764 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_read_flash_dump) (uint32_t offset, uint32_t size, void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:773:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  773 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_write_flash_dump) (uint32_t offset, uint32_t size, void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:784:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  784 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_reset_device) (uint8_t address);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:795:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  795 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_get_air_temperature) (void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:811:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  811 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_set_air_temperature) (void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:825:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  825 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_set_beacon_location) (uint8_t address, void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:840:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  840 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_set_beacons_distance) (void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:857:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  857 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_get_hedge_height) (uint8_t address, void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:873:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  873 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_set_hedge_height) (uint8_t address, void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:886:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  886 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_get_beacon_height) (uint8_t address, void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:903:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  903 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_set_beacon_height) (uint8_t address, void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:917:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  917 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_get_realtime_player_settings) (uint8_t address, void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:937:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  937 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_set_realtime_player_settings) (uint8_t address, void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:954:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  954 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_get_georeferencing_settings) (void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:971:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  971 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_set_georeferencing_settings) (void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:985:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  985 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_get_update_positions_mode) (void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1004:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1004 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_set_update_positions_mode) (void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1020:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1020 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_set_update_positions_command) (void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1035:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1035 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_set_alarm_state) (uint8_t address, void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1052:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1052 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_send_user_payload) (uint8_t address, void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1068:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1068 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_get_user_payload) (void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1092:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1092 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_set_motors_control) (uint8_t address, void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1107:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1107 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_set_robot_program_item) (uint8_t address, void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1126:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1126 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_set_robot_command) (uint8_t address, void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1143:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1143 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_set_robot_position) (uint8_t address, void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1165:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1165 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_get_robot_telemetry)(uint8_t address, void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1182:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1182 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_get_robot_settings)(uint8_t address, void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1201:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1201 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_set_robot_settings)(uint8_t address, void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1220:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1220 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_get_robot_v100_power)(void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1246:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1246 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_get_robot_v100_encoders)(void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1269:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1269 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_get_robot_v100_lidars)(void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1300:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1300 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_get_robot_v100_location)(void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1329:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1329 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_get_robot_v100_raw_imu)(void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1358:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1358 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_set_robot_v100_motors)(void *pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1384:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1384 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_device_is_modem)(uint8_t deviceType);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1393:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1393 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_device_is_beacon)(uint8_t deviceType);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1402:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1402 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_device_is_hedgehog) (uint8_t deviceType);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1411:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1411 | [01;35m[Ktypedef[m[K bool MM_STDCALL1 (MM_STDCALL2 *pt_mm_device_is_robot) (uint8_t deviceType);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1423:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1423 | [01;35m[Ktypedef[m[K bool MM_STDCALL1(MM_STDCALL2* pt_simple_api_call)(void* pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1442:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1442 | [01;35m[Ktypedef[m[K bool MM_STDCALL1(MM_STDCALL2* pt_simple_api_call_addressed)(uint8_t address, void* pdata);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1461:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1461 | [01;35m[Ktypedef[m[K bool MM_STDCALL1(MM_STDCALL2* pt_simple_api_call_send1byte)(uint8_t v8);
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_upstream/src/marvelmind_api.c:1599:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+ 1599 | [01;35m[Ktypedef[m[K bool MM_STDCALL1(MM_STDCALL2* pt_simple_api_call_no_request)(void);
+      | [01;35m[K^~~~~~~[m[K
+[ 37%] [32m[1mLinking C static library libmarvelmind_hedge_lib.a[0m
+[ 37%] Built target marvelmind_hedge_lib
+[ 50%] [32mBuilding CXX object CMakeFiles/marvelmind_ros2.dir/src/marvelmind_ros2.cpp.o[0m
+[ 62%] [32m[1mLinking C static library libmarvelmind_api_lib.a[0m
+[ 62%] Built target marvelmind_api_lib
+[ 75%] [32mBuilding CXX object CMakeFiles/marvelmind_api_ros2.dir/src/marvelmind_api_ros2.cpp.o[0m
+[ 87%] [32m[1mLinking CXX executable marvelmind_api_ros2[0m
+[ 87%] Built target marvelmind_api_ros2
+[100%] [32m[1mLinking CXX executable marvelmind_ros2[0m
+[100%] Built target marvelmind_ros2
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2/lib/marvelmind_ros2/marvelmind_ros2
+-- Symlinking: /home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2/lib/marvelmind_ros2/marvelmind_api_ros2
+-- Symlinking: /home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2/share/marvelmind_ros2/config/marvelmind_ros2_config.yaml
+-- Symlinking: /home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2/share/marvelmind_ros2/launch/marvelmind_api_ros2.launch.py
+-- Symlinking: /home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2/share/marvelmind_ros2/launch/marvelmind_ros2.launch.py
+-- Symlinking: /home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2/share/ament_index/resource_index/package_run_dependencies/marvelmind_ros2
+-- Symlinking: /home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2/share/ament_index/resource_index/parent_prefix_path/marvelmind_ros2
+-- Symlinking: /home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2/share/marvelmind_ros2/environment/ament_prefix_path.sh
+-- Symlinking: /home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2/share/marvelmind_ros2/environment/ament_prefix_path.dsv
+-- Symlinking: /home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2/share/marvelmind_ros2/environment/path.sh
+-- Symlinking: /home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2/share/marvelmind_ros2/environment/path.dsv
+-- Symlinking: /home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2/share/marvelmind_ros2/local_setup.bash
+-- Symlinking: /home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2/share/marvelmind_ros2/local_setup.sh
+-- Symlinking: /home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2/share/marvelmind_ros2/local_setup.zsh
+-- Symlinking: /home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2/share/marvelmind_ros2/local_setup.dsv
+-- Symlinking: /home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2/share/marvelmind_ros2/package.dsv
+-- Symlinking: /home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2/share/ament_index/resource_index/packages/marvelmind_ros2
+-- Symlinking: /home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2/share/marvelmind_ros2/cmake/marvelmind_ros2Config.cmake
+-- Symlinking: /home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2/share/marvelmind_ros2/cmake/marvelmind_ros2Config-version.cmake
+-- Symlinking: /home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2/share/marvelmind_ros2/package.xml

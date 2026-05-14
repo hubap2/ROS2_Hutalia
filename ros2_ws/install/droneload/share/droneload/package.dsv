@@ -1,0 +1,9 @@
+source;share/droneload/hook/pythonpath.ps1
+source;share/droneload/hook/pythonpath.dsv
+source;share/droneload/hook/pythonpath.sh
+source;share/droneload/hook/ament_prefix_path.ps1
+source;share/droneload/hook/ament_prefix_path.dsv
+source;share/droneload/hook/ament_prefix_path.sh
+source;../../build/droneload/share/droneload/hook/pythonpath_develop.ps1
+source;../../build/droneload/share/droneload/hook/pythonpath_develop.dsv
+source;../../build/droneload/share/droneload/hook/pythonpath_develop.sh

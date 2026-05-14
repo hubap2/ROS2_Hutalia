@@ -1,0 +1,1 @@
+/home/hutalia/ROS2_Hutalia/ros2_ws/build/marvelmind_ros2_msgs/rosidl_generator_c/marvelmind_ros2_msgs/msg/detail/hedge_imu_raw__type_support.h

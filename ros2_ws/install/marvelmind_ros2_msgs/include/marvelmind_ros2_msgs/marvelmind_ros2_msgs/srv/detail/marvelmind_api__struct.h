@@ -1,0 +1,1 @@
+/home/hutalia/ROS2_Hutalia/ros2_ws/build/marvelmind_ros2_msgs/rosidl_generator_c/marvelmind_ros2_msgs/srv/detail/marvelmind_api__struct.h
