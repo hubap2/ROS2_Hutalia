@@ -1,0 +1,13 @@
+# Dossiers de build ROS2 générés localement
+build/
+install/
+log/
+
+# Fichiers Python temporaires et caches
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Fichiers système ou d'éditeurs
+.DS_Store
+.vscode/

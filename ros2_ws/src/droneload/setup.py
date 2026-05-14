@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'camera_node = droneload.camera_node:main',
         ],
     },
 )
