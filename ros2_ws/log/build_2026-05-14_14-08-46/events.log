@@ -1,4 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.001426] (-) JobUnselected: {'identifier': 'marvelmind_ros2'}
-[0.024257] (-) JobUnselected: {'identifier': 'marvelmind_ros2_msgs'}
-[0.026493] (-) EventReactorShutdown: {}

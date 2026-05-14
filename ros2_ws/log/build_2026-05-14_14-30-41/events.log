@@ -1,7 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.001294] (-) JobUnselected: {'identifier': 'marvelmind_ros2'}
-[0.002527] (-) JobUnselected: {'identifier': 'marvelmind_ros2_msgs'}
-[0.002720] (droneload) JobQueued: {'identifier': 'droneload', 'dependencies': OrderedDict({'marvelmind_ros2_msgs': '/home/hutalia/ROS2_Hutalia/ros2_ws/install/marvelmind_ros2_msgs'})}
-[0.003548] (droneload) JobStarted: {'identifier': 'droneload'}
-[0.033763] (droneload) JobEnded: {'identifier': 'droneload', 'rc': 1}
-[0.045376] (-) EventReactorShutdown: {}

@@ -1,1 +1,0 @@
-/home/hutalia/ROS2_Hutalia/ros2_ws/src/marvelmind_ros2_msgs_upstream/msg/HedgeQuality.msg

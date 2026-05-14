@@ -1,2 +1,0 @@
-# Empty dependencies file for marvelmind_api_ros2.
-# This may be replaced when dependencies are built.

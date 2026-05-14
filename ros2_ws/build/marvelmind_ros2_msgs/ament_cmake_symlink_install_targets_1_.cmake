@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/hutalia/ROS2_Hutalia/ros2_ws/build/marvelmind_ros2_msgs/rosidl_generator_py/marvelmind_ros2_msgs/marvelmind_ros2_msgs_s__rosidl_typesupport_introspection_c.so" "TARGETS" "marvelmind_ros2_msgs_s__rosidl_typesupport_introspection_c" "DESTINATION" "lib/python3.12/site-packages/marvelmind_ros2_msgs")

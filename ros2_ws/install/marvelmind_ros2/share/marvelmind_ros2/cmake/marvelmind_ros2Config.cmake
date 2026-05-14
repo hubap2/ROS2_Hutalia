@@ -1,1 +1,0 @@
-/home/hutalia/ROS2_Hutalia/ros2_ws/build/marvelmind_ros2/ament_cmake_core/marvelmind_ros2Config.cmake
