@@ -12,9 +12,14 @@ class ReconnaissanceNode(Node):
     def __init__(self):
         super().__init__('reconnaissance_node')
         
+        # On initialise à None (aucune cible définie au lancement)
+        self.cible_actuelle = None
+        
         # 1. Configuration des Publishers et Subscribers
         self.subscription = self.create_subscription(Image, 'camera/image_raw', self.image_callback, 10)
-        self.publisher_status = self.create_publisher(String, 'camera/object_status', 10)
+        self.sub_reco_image = self.create_subscription(String, 'robot/reco_image', self.reco_image_callback, 10)
+        self.publisher_status = self.create_publisher(String, 'reconnaissance/pince_command', 10)
+        
         self.bridge = CvBridge()
 
         # 2. Récupération dynamique du chemin du dossier images_cibles
@@ -29,7 +34,11 @@ class ReconnaissanceNode(Node):
         self.target_images, self.labels = self.load_target_images(self.root_dir)
         self.target_features = [self.orb.detectAndCompute(img, None) for img in self.target_images]
         
-        self.get_logger().info('Node Vision Prêt et abonné au flux caméra !')
+        self.get_logger().info('Node Vision Prêt. Analyse en cours, en attente de données sur robot/reco_image...')
+
+    def reco_image_callback(self, msg):
+        self.cible_actuelle = msg.data
+        self.get_logger().info(f"Nouvelle cible reçue : '{self.cible_actuelle}'. La pince s'ouvrira si cet objet est détecté !")
 
     def load_target_images(self, root_dir):
         images = []
@@ -80,15 +89,20 @@ class ReconnaissanceNode(Node):
         if detections:
             best_match = max(detections, key=detections.get)
             
-            # Cette ligne envoie le résultat de l'objet vu en direct dans ton terminal
-            self.get_logger().info(f"Objet détecté en direct : {best_match}")
-            
-            if best_match == "chien": 
-                object_msg.data = "ouvert"
-                target_found = True
+            # Affichage permanent de ce qu'il voit
+            if self.cible_actuelle is not None:
+                self.get_logger().info(f"Objet détecté : {best_match} | Cible cherchée : {self.cible_actuelle}")
+                # Ouvre la pince SEULEMENT si ça correspond
+                if best_match == self.cible_actuelle: 
+                    object_msg.data = "ouvert"
+                    target_found = True
+            else:
+                self.get_logger().info(f"Objet détecté : {best_match} | (Aucune cible définie, la pince reste fermée)")
+                
         else:
-            # Optionnel : affiche qu'aucun objet connu n'est détecté à chaque frame
-            self.get_logger().info("Recherche en cours... Aucun objet connu")
+            # S'il ne voit rien, on l'affiche seulement si on est en train de chercher activement
+            if self.cible_actuelle is not None:
+                self.get_logger().info(f"Recherche de '{self.cible_actuelle}' en cours... Aucun objet connu")
         
         if not target_found:
             object_msg.data = "ferme"
@@ -103,7 +117,6 @@ def main(args=None):
         rclpy.spin(node)
     except KeyboardInterrupt:
         pass
-    # Plus besoin de détruire les fenêtres OpenCV ici non plus
     rclpy.try_shutdown()
 
 if __name__ == '__main__':
