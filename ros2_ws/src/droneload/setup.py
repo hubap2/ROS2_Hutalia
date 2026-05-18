@@ -27,6 +27,7 @@ setup(
             'camera_node = droneload.camera_node:main',
             'reconnaissance_node = droneload.reconnaissance_node:main',
             'aruco_node = droneload.aruco_node:main',
+            'pince1_node = droneload.pince1_node:main',
         ],
     },
 )
