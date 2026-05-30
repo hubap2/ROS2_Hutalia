@@ -30,12 +30,13 @@ class RobotNode(Node):
         self.last_command = ""
 
         # --- INITIALISATION SÉRIE ---
+       # --- INITIALISATION SÉRIE ---
         try:
-            self.ser = serial.Serial('/dev/ttyAMA0', 57600, timeout=0.1)  
+            self.ser = serial.Serial('/dev/ttyUSB0', 57600, timeout=0.1)
             time.sleep(2)
-            self.get_logger().info("✅ Port série prêt et connecté à l'Arduino.")
+            self.get_logger().info("✅ Port série USB (FTDI) prêt et connecté à l'Arduino.")
         except Exception as e:
-            self.get_logger().error(f"❌ Erreur liaison série : {e}")
+            self.get_logger().error(f"❌ Erreur liaison série USB : {e}")
             raise e
 
         # --- ABONNEMENT ROS 2 ---
