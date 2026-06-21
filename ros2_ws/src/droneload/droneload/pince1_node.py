@@ -33,6 +33,13 @@ class Pince1Node(Node):
             'reconnaissance/pince_command',
             self.listener_callback,
             10)
+        
+        # On écoute sur 'ihm/pince_command' pour correspondre au noeud de commande manuelle
+        self.subscription = self.create_subscription(
+            String,
+            'ihm/pince_command',
+            self.listener_callback,
+            10)
 
         # 3. Création du Publisher (Annonce l'état)
         # On publie sur 'pince_etat'
@@ -49,12 +56,12 @@ class Pince1Node(Node):
         
         if commande == "ouvert": # Adapté pour correspondre au "ouvert" envoyé par la vision
             # Vous pourrez ajuster ces angles extrêmes plus tard selon vos réflexions
-            self.servo.angle = 180
+            self.servo.angle = 0
             self.etat_actuel = "ouvert"
             self.get_logger().info("Commande reçue : Ouverture de la pince")
         
         elif commande == "ferme": # Adapté pour correspondre au "ferme" envoyé par la vision
-            self.servo.angle = 0
+            self.servo.angle = 90
             self.etat_actuel = "ferme"
             self.get_logger().info("Commande reçue : Fermeture de la pince")
         
