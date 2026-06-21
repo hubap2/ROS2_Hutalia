@@ -61,6 +61,29 @@ class LedControllerNode(Node):
             self.led_left.show()
             self.led_rignt.show()
 
+    def etat_pincese(self, msg);
+        """
+        Appelé à chaque fois qu'on reçoit une commande de direction.
+        msg.data va de -100 (Gauche max) à +100 (Droite max).
+        """
+        mesage = msg.data
+        
+        if mesage == "ferme":
+            # Virage à GAUCHE
+            pourcentage = abs(valeur)
+            nb_leds_allumees = int((pourcentage / 100.0) * len(LEDS_GAUCHE))
+            self.allumer_leds("GAUCHE", nb_leds_allumees)
+            
+        elif valeur > 0:
+            # Virage à DROITE
+            pourcentage = valeur
+            nb_leds_allumees = int((pourcentage / 100.0) * len(LEDS_DROITE))
+            self.allumer_leds("DROITE", nb_leds_allumees)
+            
+        else:
+            # Tout droit (0)
+            self.allumer_leds("CENTRE", 0)
+
     def virage_callback(self, msg):
         """
         Appelé à chaque fois qu'on reçoit une commande de direction.
