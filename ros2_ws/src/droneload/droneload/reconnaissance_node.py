@@ -30,15 +30,15 @@ class ReconnaissanceNode(Node):
         self.bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
         
         # 4. Chargement et pré-traitement des images cibles au démarrage
-        self.get_logger().info(f"Chargement des images cibles depuis : {self.root_dir}")
+        #self.get_logger().info(f"Chargement des images cibles depuis : {self.root_dir}")
         self.target_images, self.labels = self.load_target_images(self.root_dir)
         self.target_features = [self.orb.detectAndCompute(img, None) for img in self.target_images]
         
-        self.get_logger().info('Node Vision Prêt. Analyse en cours, en attente de données sur robot/reco_image...')
+        self.get_logger().info('Node Vision Prêt. ')
 
     def reco_image_callback(self, msg):
         self.cible_actuelle = msg.data
-        self.get_logger().info(f"Nouvelle cible reçue : '{self.cible_actuelle}'. La pince s'ouvrira si cet objet est détecté !")
+        #self.get_logger().info(f"Nouvelle cible reçue : '{self.cible_actuelle}'")
 
     def load_target_images(self, root_dir):
         images = []
@@ -97,13 +97,15 @@ class ReconnaissanceNode(Node):
                     object_msg.data = "ouvert"
                     target_found = True
             else:
-                self.get_logger().info(f"Objet détecté : {best_match} | (Aucune cible définie, la pince reste fermée)")
+                #self.get_logger().info(f"Objet détecté : {best_match} | (Aucune cible définie, la pince reste fermée)")
+                pass
                 
         else:
             # S'il ne voit rien, on l'affiche seulement si on est en train de chercher activement
-            if self.cible_actuelle is not None:
-                self.get_logger().info(f"Recherche de '{self.cible_actuelle}' en cours... Aucun objet connu")
-        
+            # if self.cible_actuelle is not None:
+            #     self.get_logger().info(f"Recherche de '{self.cible_actuelle}' en cours... Aucun objet connu")
+            pass
+
         if not target_found:
             object_msg.data = "ferme"
             
