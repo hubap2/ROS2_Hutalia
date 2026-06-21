@@ -33,6 +33,13 @@ class Pince1Node(Node):
             'reconnaissance/pince_command',
             self.listener_callback,
             10)
+        
+        # On écoute sur 'ihm/pince_command' pour correspondre au noeud de commande manuelle
+        self.subscription = self.create_subscription(
+            String,
+            'ihm/pince_command',
+            self.listener_callback,
+            10)
 
         # 3. Création du Publisher (Annonce l'état)
         # On publie sur 'pince_etat'
