@@ -104,8 +104,6 @@ class ReconnaissanceNode(Node):
             if self.cible_actuelle is not None:
                 self.get_logger().info(f"Recherche de '{self.cible_actuelle}' en cours... Aucun objet connu")
         
-        if not target_found:
-            object_msg.data = "ferme"
             
         # Publication du résultat String ("ouvert" ou "ferme")
         self.publisher_status.publish(object_msg)
