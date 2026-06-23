@@ -55,7 +55,8 @@ reco_topic:
 robot:
 	bash -c "cd $(WORKSPACE) && colcon build --symlink-install --packages-select droneload && source install/setup.bash && ros2 run droneload robot_node"
 
-
+imagereconnu_topic:
+	bash -c "source $(WORKSPACE)/install/setup.bash && ros2 topic echo /reconnaissance/image_reconnu"
 
 
 
