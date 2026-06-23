@@ -19,7 +19,8 @@ class ReconnaissanceNode(Node):
         self.subscription = self.create_subscription(Image, 'camera/image_raw', self.image_callback, 10)
         self.sub_reco_image = self.create_subscription(String, 'robot/reco_image', self.reco_image_callback, 10)
         self.publisher_status = self.create_publisher(String, 'reconnaissance/pince_command', 10)
-        
+        self.publisher_statut_debug = self.create_publisher(String, 'reconnaissance/image_reconnu', 10)
+
         self.bridge = CvBridge()
 
         # 2. Récupération dynamique du chemin du dossier images_cibles
@@ -85,9 +86,11 @@ class ReconnaissanceNode(Node):
 
         # Message de sortie par défaut
         object_msg = String()
+        image_msg = String()
 
         if detections:
             best_match = max(detections, key=detections.get)
+            image_msg.data = f"{best_match}"
             
             # Affichage permanent de ce qu'il voit
             if self.cible_actuelle is not None:
@@ -107,6 +110,7 @@ class ReconnaissanceNode(Node):
 
         # Publication du résultat String ("ouvert" ou "ferme")
         self.publisher_status.publish(object_msg)
+        self.publisher_statut_debug.publish(image_msg)
 
 def main(args=None):
     rclpy.init(args=args)
