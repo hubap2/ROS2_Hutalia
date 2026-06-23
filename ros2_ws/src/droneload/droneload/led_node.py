@@ -3,31 +3,29 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int32
 import time
+import board
+import neopixel
 
 # =====================================================================
 # CONFIGURATION
 # =====================================================================
 # Met à False UNIQUEMENT quand tu es sur le Raspberry Pi avec le ruban branché
-SIMULATION_MODE = True
+SIMULATION_MODE = False#True
 
 # Configuration du ruban LED
-NUM_LEDS = 20
-LED_PIN = 18  # Broche GPIO (Généralement GPIO 18 ou 21 sur Raspberry Pi)
+PIN_L = board.D20        # Broche GPIO 21
+PIN_R = board.D21        # Broche GPIO 18
+NUM_LEDS = 10          # Nombre de LEDs sur ton ruban
 
 # On sépare les index des LEDs (A TOI DE CHANGER CES NUMÉROS SELON TON CABLAGE)
 # Exemple : 10 LEDs pour la gauche, 10 LEDs pour la droite
-LEDS_GAUCHE = [0, 1, 2, 3, 4, 10, 11, 12, 13, 14]
-LEDS_DROITE = [5, 6, 7, 8, 9, 15, 16, 17, 18, 19]
+LEDS_GAUCHE = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] #[0, 1, 2, 3, 4, 10, 11, 12, 13, 14]
+LEDS_DROITE = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] #[5, 6, 7, 8, 9, 15, 16, 17, 18, 19]
 
 # Code Couleur Maritime (RGB)
 COULEUR_GAUCHE = (255, 0, 0)   # ROUGE (Bâbord)
 COULEUR_DROITE = (0, 255, 0)   # VERT  (Tribord)
 COULEUR_ETEINT = (0, 0, 0)
-
-if not SIMULATION_MODE:
-    # Import de la bibliothèque spécifique au Raspberry Pi
-    import board
-    import neopixel
 
 class LedControllerNode(Node):
     def __init__(self):
@@ -48,14 +46,17 @@ class LedControllerNode(Node):
             self.get_logger().info("MODE SIMULATION ACTIF : Affichage dans le terminal.")
         else:
             self.get_logger().info("MODE RASPBERRY PI ACTIF : Connexion au ruban NeoPixel.")
-            self.pixels = neopixel.NeoPixel(board.D18, NUM_LEDS, auto_write=False)
+            self.led_left = neopixel.NeoPixel(PIN_L, NUM_LEDS, auto_write=False)
+            self.led_rignt = neopixel.NeoPixel(PIN_R, NUM_LEDS, auto_write=False)
             self.tout_eteindre()
 
     def tout_eteindre(self):
         """Éteint toutes les LEDs physiques"""
         if not SIMULATION_MODE:
-            self.pixels.fill(COULEUR_ETEINT)
-            self.pixels.show()
+            self.led_left.fill(COULEUR_ETEINT)
+            self.led_rignt.fill(COULEUR_ETEINT)
+            self.led_left.show()
+            self.led_rignt.show()
 
     def virage_callback(self, msg):
         """
@@ -88,19 +89,20 @@ class LedControllerNode(Node):
         if SIMULATION_MODE:
             self.simuler_affichage_terminal(direction, nombre)
         else:
-            self.pixels.fill(COULEUR_ETEINT) # On éteint tout d'abord
+            self.led_rignt.fill(COULEUR_ETEINT) # On éteint tout d'abord
+            self.led_left.fill(COULEUR_ETEINT) # On éteint tout d'abord
             
             if direction == "GAUCHE":
                 for i in range(nombre):
                     if i < len(LEDS_GAUCHE):
                         index_led = LEDS_GAUCHE[i]
-                        self.pixels[index_led] = COULEUR_GAUCHE
+                        self.led_left[index_led] = COULEUR_GAUCHE
             
             elif direction == "DROITE":
                 for i in range(nombre):
                     if i < len(LEDS_DROITE):
                         index_led = LEDS_DROITE[i]
-                        self.pixels[index_led] = COULEUR_DROITE
+                        self.led_rignt[index_led] = COULEUR_DROITE
                         
             self.pixels.show()
 

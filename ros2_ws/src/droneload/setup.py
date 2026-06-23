@@ -33,6 +33,9 @@ setup(
             'aruco_node = droneload.aruco_node:main',
             'robot_node = droneload.robot_node:main',
             'pince1_node = droneload.pince1_node:main',
+            'suivit_ligne = droneload.suivit_ligne:main',
+            'led_node = droneload.led_node:main',
+            'led_visuelle_node = droneload.led_visuelle_node:main',
         ],
     },
 )
