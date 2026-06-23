@@ -85,11 +85,11 @@ class RobotNode(Node):
 
                     # --- LOGIQUE SÉQUENTIELLE DES MISSIONS ARUCO ---
                     if self.waiting_for_response:
-                        if "rien" in reponse.lower():
+                        if "N" in reponse.lower():
                             self.get_logger().info("❌ Pas aligné → reprise du guidage")
                             self.waiting_for_response = False
 
-                        elif "premiere couleur okay" in reponse.lower() or "deuxieme couleur okay" in reponse.lower():
+                        elif "F" in reponse.lower() or "S" in reponse.lower():
                             self.get_logger().info("🎉 Mission validée par l'Arduino !")
                             self.mission_complete = True
 
@@ -148,7 +148,7 @@ class RobotNode(Node):
                 self.search_direction = "D" if self.search_direction == "G" else "G"
                 self.last_search_switch = current_time
 
-            command = f"{self.search_direction} 200\n"
+            command = f"{self.search_direction}\n"
             if command != self.last_command:
                 self.ser.write(command.encode())
                 self.last_command = command
@@ -158,18 +158,18 @@ class RobotNode(Node):
             diff = pos_x_robot - pos_x_fixe
 
             if diff > self.SEUIL_PIXELS:
-                command = "G 254\n"
+                command = "G\n"
             elif diff < -self.SEUIL_PIXELS:
-                command = "D 254\n"
+                command = "D\n"
             else:
-                command = "S\n"
+                command = "A\n"
 
             if (current_time - self.last_stop_time) < self.STOP_DELAY:
                 command = ""
 
             if command and command != self.last_command:
                 if (current_time - self.last_send_time) > self.MIN_SEND_INTERVAL:
-                    if command == "S\n" and (current_time - self.last_send_time) < 0.3:
+                    if command == "A\n" and (current_time - self.last_send_time) < 0.3:
                         return
 
                     self.ser.write(command.encode())
@@ -177,7 +177,7 @@ class RobotNode(Node):
                     self.last_command = command
                     self.last_send_time = current_time
 
-                    if command == "S\n":
+                    if command == "A\n":
                         self.last_stop_time = current_time
                         self.waiting_for_response = True
 
