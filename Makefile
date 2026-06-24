@@ -58,6 +58,22 @@ robot:
 imagereconnu_topic:
 	bash -c "source $(WORKSPACE)/install/setup.bash && ros2 topic echo /reconnaissance/image_reconnu"
 
+# --- COMMANDES DE SIMULATION / TEST (PUBLISH) ---
 
+# Variable par défaut pour l'objet à chercher (si on ne précise rien)
+OBJ ?= "Image 1"
 
+# 1. Envoyer la cible UNE SEULE FOIS (-1)
+pub_image_once:
+	bash -c "source $(WORKSPACE)/install/setup.bash && ros2 topic pub -1 /robot/reco_image std_msgs/msg/String \"{data: '$(OBJ)'}\""
 
+# 2. Envoyer la cible EN PERMANENCE (-r 1 -> 1 fois par seconde)
+pub_image_loop:
+	bash -c "source $(WORKSPACE)/install/setup.bash && ros2 topic pub -r 1 /robot/reco_image std_msgs/msg/String \"{data: '$(OBJ)'}\""
+
+# Variable par défaut pour la commande de la pince
+CMD ?= ouvert
+
+# Forcer l'envoi d'un ordre à la pince une seule fois
+command_pince:
+	bash -c "source $(WORKSPACE)/install/setup.bash && ros2 topic pub -1 /reconnaissance/pince_command std_msgs/msg/String \"{data: '$(CMD)'}\""
