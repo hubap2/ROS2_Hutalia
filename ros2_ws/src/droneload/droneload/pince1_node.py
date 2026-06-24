@@ -51,7 +51,10 @@ class Pince1Node(Node):
             self.servo.angle = 0
             self.etat_actuel = "ouvert"
             self.get_logger().info("Commande valide reçue : Ouverture de la pince")
-            
+        if commande == "ouvert":
+            self.servo.angle = 180
+            self.etat_actuel = "ferme"
+            self.get_logger().info("Commande valide reçue : Ouverture de la pince")
         # Tout le reste (chaînes vides, ordres de fermeture, bruit) est ignoré en silence
 
     def publish_status(self):
