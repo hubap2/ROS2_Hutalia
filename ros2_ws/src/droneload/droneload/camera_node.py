@@ -44,11 +44,8 @@ def main(args=None): # Les deux-points étaient manquants ici
         rclpy.spin(node)
     except KeyboardInterrupt:
         pass
-    finally:
-        # On arrête proprement la caméra et le node
-        node.pipeline.stop()
-        node.destroy_node()
-        rclpy.shutdown()
-
+    node.pipeline.stop()
+    rclpy.try_shutdown()
+    
 if __name__ == '__main__':
     main()
